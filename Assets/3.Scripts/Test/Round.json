@@ -1,0 +1,186 @@
+{
+  "round1": [
+    {
+      "height": "0",
+      "baseNum": "0",
+      "x": "0",
+      "z": "-2",
+      "y": "1",
+      "yAngle": "0",
+      "type": "1",
+      "isStart": "0"
+    },
+    {
+      "height": null,
+      "baseNum": "1",
+      "x": "0",
+      "z": "-1",
+      "y": "1",
+      "yAngle": "0",
+      "type": "0",
+      "isStart": "0"
+    },
+    {
+      "height": null,
+      "baseNum": "2",
+      "x": "2",
+      "z": "0",
+      "y": "1",
+      "yAngle": "0",
+      "type": "1",
+      "isStart": "0"
+    },
+    {
+      "height": null,
+      "baseNum": "3",
+      "x": "1",
+      "z": "0",
+      "y": "1",
+      "yAngle": "0",
+      "type": "0",
+      "isStart": "0"
+    },
+    {
+      "height": null,
+      "baseNum": "4",
+      "x": "0",
+      "z": "0",
+      "y": "1",
+      "yAngle": "0",
+      "type": "1",
+      "isStart": "1"
+    },
+    {
+      "height": null,
+      "baseNum": "5",
+      "x": "-1",
+      "z": "0",
+      "y": "1",
+      "yAngle": "0",
+      "type": "0",
+      "isStart": "0"
+    },
+    {
+      "height": null,
+      "baseNum": "6",
+      "x": "-2",
+      "z": "0",
+      "y": "1",
+      "yAngle": "0",
+      "type": "1",
+      "isStart": "0"
+    },
+    {
+      "height": null,
+      "baseNum": "7",
+      "x": "0",
+      "z": "1",
+      "y": "1",
+      "yAngle": "0",
+      "type": "0",
+      "isStart": "0"
+    },
+    {
+      "height": null,
+      "baseNum": "8",
+      "x": "0",
+      "z": "2",
+      "y": "1",
+      "yAngle": "0",
+      "type": "1",
+      "isStart": "0"
+    }
+  ],
+  "round2": [
+    {
+      "height": "2",
+      "baseNum": "0",
+      "x": "-1",
+      "z": "-1",
+      "y": "3",
+      "yAngle": "90",
+      "type": "1",
+      "isStart": "1"
+    },
+    {
+      "height": null,
+      "baseNum": "1",
+      "x": "0",
+      "z": "-1",
+      "y": "2",
+      "yAngle": "0",
+      "type": "0",
+      "isStart": "0"
+    },
+    {
+      "height": null,
+      "baseNum": "2",
+      "x": "1",
+      "z": "-1",
+      "y": "1",
+      "yAngle": "0",
+      "type": "0",
+      "isStart": "0"
+    },
+    {
+      "height": null,
+      "baseNum": "3",
+      "x": "-1",
+      "z": "0",
+      "y": "2",
+      "yAngle": "0",
+      "type": "0",
+      "isStart": "0"
+    },
+    {
+      "height": null,
+      "baseNum": "4",
+      "x": "0",
+      "z": "0",
+      "y": "1",
+      "yAngle": "0",
+      "type": "1",
+      "isStart": "0"
+    },
+    {
+      "height": null,
+      "baseNum": "5",
+      "x": "1",
+      "z": "0",
+      "y": "2",
+      "yAngle": "0",
+      "type": "0",
+      "isStart": "0"
+    },
+    {
+      "height": null,
+      "baseNum": "6",
+      "x": "-1",
+      "z": "1",
+      "y": "1",
+      "yAngle": "0",
+      "type": "0",
+      "isStart": "0"
+    },
+    {
+      "height": null,
+      "baseNum": "7",
+      "x": "0",
+      "z": "1",
+      "y": "2",
+      "yAngle": "0",
+      "type": "0",
+      "isStart": "0"
+    },
+    {
+      "height": null,
+      "baseNum": "8",
+      "x": "1",
+      "z": "1",
+      "y": "1",
+      "yAngle": "0",
+      "type": "1",
+      "isStart": "0"
+    }
+  ]
+}

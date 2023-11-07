@@ -187,11 +187,8 @@ public class PlayerMoveTest : MonoBehaviour
     {
         GetComponent<Light_Command>().lightAni = null;
 
-        transform.position = new Vector3(
-            GameObject.Find("Base_start").transform.position.x,
-            Mathf.Round(GameObject.Find("Base_start").transform.position.y),
-            GameObject.Find("Base_start").transform.position.z);
-        transform.eulerAngles = new Vector3(0, GameObject.Find("Base_start").transform.eulerAngles.y, 0);
+        transform.position = MapProducer.Instance.startPos;
+        transform.eulerAngles = MapProducer.Instance.startAngle;
 
         playerStartPos = transform.position;
         playerStartRot = transform.eulerAngles;

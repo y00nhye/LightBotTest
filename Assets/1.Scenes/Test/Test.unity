@@ -4972,8 +4972,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roundInfo:
-  - {fileID: 11400000, guid: 592880565f6a43e40bb449af434d78de, type: 2}
   - {fileID: 11400000, guid: c1173e61c87f8774fa41b59bccb2fa3d, type: 2}
+  - {fileID: 11400000, guid: 592880565f6a43e40bb449af434d78de, type: 2}
   roundAll: 0
   roundCnt: 0
   currentLight: 0
@@ -5891,7 +5891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6f3e073fc35a6f45bfe36255004f9d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 0.005
+  movespeed: 0.01
   playerAni: {fileID: 3595372491873080999}
   tar: {x: 0, y: 0, z: 0}
   isReady: 0
@@ -5907,7 +5907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a049ca85c720a84db702dcbab3d9d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 0.005
+  movespeed: 0.01
   playerAni: {fileID: 3595372491873080999}
   tar: {x: 0, y: 0, z: 0}
   isReady: 0
@@ -5925,7 +5925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 817573dd4de813b44bdd33908ff388d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 0.005
+  movespeed: 0.01
   playerAni: {fileID: 3595372491873080999}
   tar: {x: 0, y: 0, z: 0}
   isReady: 0
@@ -5941,7 +5941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d330d76a09864347a917af6a8302cf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 0.005
+  movespeed: 0.02
   playerAni: {fileID: 3595372491873080999}
   tar: {x: 0, y: 0, z: 0}
   isReady: 0
@@ -5957,7 +5957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55418c87132eceb47875df7fe53e5036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 0.003
+  movespeed: 0.01
   playerAni: {fileID: 3595372491873080999}
   tar: {x: 0, y: 0, z: 0}
   isReady: 0
@@ -13618,6 +13618,12 @@ MonoBehaviour:
   map_light: {fileID: 7855950337761344485, guid: 298008f4f94b0be45ac50412aa601473,
     type: 3}
   mapPos: {fileID: 1785098836}
+  allBases: []
+  bases: []
+  startPos: {x: 0, y: 0, z: 0}
+  startAngle: {x: 0, y: 0, z: 0}
+  currentMapData: []
+  mainCam: {fileID: 330585545}
 --- !u!114 &1785098839
 MonoBehaviour:
   m_ObjectHideFlags: 0

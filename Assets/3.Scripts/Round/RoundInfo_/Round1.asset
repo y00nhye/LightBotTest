@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3560947add6e96243a0f3d7a485e4889, type: 3}
   m_Name: Round1
   m_EditorClassIdentifier: 
-  lightCnt: 5
-  inputBtnArr: 00000000010000000200000003000000
+  lightCnt: 1
+  inputBtnArr: 0000000001000000020000000300000005000000

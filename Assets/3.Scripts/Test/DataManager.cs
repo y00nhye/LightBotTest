@@ -7,9 +7,19 @@ public class DataManager : Singleton<DataManager>
     public TextAsset data;
     public AllData datas;
 
+    public Dictionary<int, MapData[]> allRoundData = new Dictionary<int, MapData[]>();
+
     private void Awake()
     {
         datas = JsonUtility.FromJson<AllData>(data.text);
+
+        DataInit();
+    }
+
+    private void DataInit()
+    {
+        allRoundData.Add(1, datas.round1);
+        allRoundData.Add(2, datas.round2);
     }
 }
 
@@ -18,20 +28,13 @@ public class AllData
 {
     public MapData[] round1;
     public MapData[] round2;
-
-    public Dictionary<int, MapData> allRoundData;
-
-    public void AllRoundDataInit()
-    {
-
-    }
 }
 
 [System.Serializable]
 public class MapData
 {
     public int height;
-    public int baseNum;
+    public string baseNum;
     public int x;
     public int z;
     public int y;

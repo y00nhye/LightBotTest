@@ -4972,8 +4972,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roundInfo:
-  - {fileID: 11400000, guid: c1173e61c87f8774fa41b59bccb2fa3d, type: 2}
   - {fileID: 11400000, guid: 592880565f6a43e40bb449af434d78de, type: 2}
+  - {fileID: 11400000, guid: c1173e61c87f8774fa41b59bccb2fa3d, type: 2}
   roundAll: 0
   roundCnt: 0
   currentLight: 0
@@ -5844,9 +5844,6 @@ GameObject:
   - component: {fileID: 928163896}
   - component: {fileID: 928163894}
   - component: {fileID: 928163897}
-  - component: {fileID: 928163891}
-  - component: {fileID: 928163892}
-  - component: {fileID: 928163893}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -5882,49 +5879,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a40463937f1d74644a2bdbac802aed8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!136 &928163891
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 928163887}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.2
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.2, z: 0}
---- !u!54 &928163892
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 928163887}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &928163893
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 928163887}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.3, y: 0.3, z: 0.5}
-  m_Center: {x: 0, y: 0.5, z: 0.4}
 --- !u!114 &928163894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5939,8 +5893,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movespeed: 0.005
   playerAni: {fileID: 3595372491873080999}
-  canGo: 0
-  canJump: 0
   tar: {x: 0, y: 0, z: 0}
   isReady: 0
 --- !u!114 &928163895
@@ -5957,8 +5909,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movespeed: 0.005
   playerAni: {fileID: 3595372491873080999}
-  canGo: 0
-  canJump: 0
   tar: {x: 0, y: 0, z: 0}
   isReady: 0
   lightAni: {fileID: 0}
@@ -5977,8 +5927,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movespeed: 0.005
   playerAni: {fileID: 3595372491873080999}
-  canGo: 0
-  canJump: 0
   tar: {x: 0, y: 0, z: 0}
   isReady: 0
 --- !u!114 &928163897
@@ -5995,8 +5943,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movespeed: 0.005
   playerAni: {fileID: 3595372491873080999}
-  canGo: 0
-  canJump: 0
   tar: {x: 0, y: 0, z: 0}
   isReady: 0
 --- !u!114 &928163898
@@ -6013,8 +5959,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movespeed: 0.003
   playerAni: {fileID: 3595372491873080999}
-  canGo: 0
-  canJump: 0
   tar: {x: 0, y: 0, z: 0}
   isReady: 0
 --- !u!114 &928163899

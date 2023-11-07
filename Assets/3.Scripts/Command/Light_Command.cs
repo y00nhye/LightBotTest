@@ -9,10 +9,8 @@ public class Light_Command : Command
 
     public List<Animator> lightAniOn = new List<Animator>();
 
-    public override void Action(bool isWall, bool isJump, bool isJumpDown)
+    public override void Action()
     {
-        
-
         isReady = false;
         playerAni.SetBool("GO", false);
         playerAni.SetBool("JUMP", false);

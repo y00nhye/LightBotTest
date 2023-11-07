@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Right_Command : Command
 {
-    public override void Action(bool isWall, bool isJump, bool isJumpDown)
+    public override void Action()
     {
         isReady = false;
         StartCoroutine(Action_co());

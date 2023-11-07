@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,55 +13,15 @@ public class PlayerMoveTest : MonoBehaviour
     Vector3 playerStartRot;
 
     bool isReady = false;
-    bool isWall = false;
-    bool isJump = false;
-    bool isJumpDown = false;
 
     bool isMove = false;
     int moveMainCnt;
     int moveProc1Cnt;
     int moveProc2Cnt;
 
-    public Vector3 currentPos;
-
     private void OnEnable() //default 플레이어 커맨드 설정
     {
         playerCommand = playerCommandList[1];
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Wall"))
-        {
-            isWall = true;
-        }
-        if (other.CompareTag("Jump"))
-        {
-            isWall = true;
-            isJump = true;
-        }
-        if (other.CompareTag("JumpDown"))
-        {
-            isWall = true;
-            isJumpDown = true;
-        }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Wall"))
-        {
-            isWall = false;
-        }
-        if (other.CompareTag("Jump"))
-        {
-            isWall = false;
-            isJump = false;
-        }
-        if (other.CompareTag("JumpDown"))
-        {
-            isWall = false;
-            isJumpDown = false;
-        }
     }
 
     private void Update()
@@ -174,7 +135,7 @@ public class PlayerMoveTest : MonoBehaviour
         isReady = false;
 
         playerCommand = playerCommandList[playerMove];
-        playerCommand.Action(isWall, isJump, isJumpDown); //플레이어 커맨드에 구현된 action 함수 실행
+        playerCommand.Action(); //플레이어 커맨드에 구현된 action 함수 실행
     }
 
     public void StartMove() //움직임 시작 상태 구현
@@ -238,9 +199,6 @@ public class PlayerMoveTest : MonoBehaviour
         StartCoroutine(LoadPlayer_co());
 
         isMove = false;
-        isWall = false;
-        isJump = false;
-        isJumpDown = false;
     }
 
     IEnumerator LoadPlayer_co() //플레이어 소환 코루틴

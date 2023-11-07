@@ -18,6 +18,13 @@ public class AllData
 {
     public MapData[] round1;
     public MapData[] round2;
+
+    public Dictionary<int, MapData> allRoundData;
+
+    public void AllRoundDataInit()
+    {
+
+    }
 }
 
 [System.Serializable]

@@ -6,9 +6,9 @@ public class Jump_Command : Command
 {
     Vector3 jumpEndPos = Vector3.zero;
 
-    public override void Action(bool isWall, bool isJump, bool isJumpDown)
+    public override void Action()
     {
-        isReady = false;
+        /*isReady = false;
         if (isJump)
         {
             canJump = true;
@@ -28,12 +28,12 @@ public class Jump_Command : Command
         playerAni.SetBool("GO", false);
         playerAni.SetBool("JUMP", true);
 
-        StartCoroutine(Action_co());
+        StartCoroutine(Action_co());*/
     }
 
     public override IEnumerator Action_co()
     {
-        if (canJump)
+        /*if (canJump)
         {
             while (Vector3.Distance(transform.position, tar) > 0.01f)
             {
@@ -58,6 +58,8 @@ public class Jump_Command : Command
 
         canJump = false;
         playerAni.SetBool("JUMP", false);
-        isReady = true;
+        isReady = true;*/
+
+        yield return new WaitForSeconds(1f);
     }
 }

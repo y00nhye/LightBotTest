@@ -9,12 +9,10 @@ public abstract class Command : MonoBehaviour
     public Animator playerAni;
 
     //움직일 때 바뀌는 값
-    public bool canGo;
-    public bool canJump;
     public Vector3 tar;
     public bool isReady;
 
-    public abstract void Action(bool isWall, bool isJump, bool isJumpDown); //움직임 실행 함수
+    public abstract void Action(); //움직임 실행 함수
 
     public abstract IEnumerator Action_co(); //움직임 코루틴
 }

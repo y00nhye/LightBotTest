@@ -18,22 +18,21 @@ public class Light_Command : Command
         playerAni.SetBool("GO", false);
         playerAni.SetBool("JUMP", false);
 
-        Debug.Log(tar);
+        int tar_i = (int)Mathf.Round(tar.x) * 100 
+            + (int)Mathf.Round(tar.z) * 10 
+            + (int)Mathf.Round(tar.y);
 
-        int tar_i = (int)tar.x * 100 + (int)tar.z * 10 + (int)tar.y; //xzy 하나의 값
-
-        Debug.Log(tar_i);
-
-        foreach (int pos in MapProducer.Instance.baseData.Keys)
+        foreach (int pos in MapLoader.Instance.baseData.Keys)
         {
             if (tar_i == pos)
             {
-                if (MapProducer.Instance.baseData[pos].type == 1)
+                if (MapLoader.Instance.baseData[pos].type == 1) //해당 data에서 type이 1이라면 (light block)
                 {
                     isLight = true;
 
-                    lightAni = MapProducer.Instance.bases
-                        [int.Parse(MapProducer.Instance.baseData[pos].baseNum)].GetComponent<Animator>();
+                    //base 오브젝트에 접근해 animator 가져오기
+                    lightAni = MapLoader.Instance.bases
+                        [int.Parse(MapLoader.Instance.baseData[pos].baseNum)].GetComponent<Animator>();
                 }
 
                 break;

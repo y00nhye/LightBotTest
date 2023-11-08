@@ -187,8 +187,8 @@ public class PlayerMoveTest : MonoBehaviour
     {
         GetComponent<Light_Command>().lightAni = null;
 
-        transform.position = MapProducer.Instance.startPos;
-        transform.eulerAngles = MapProducer.Instance.startAngle;
+        transform.position = MapLoader.Instance.startPos;
+        transform.eulerAngles = MapLoader.Instance.startAngle;
 
         playerStartPos = transform.position;
         playerStartRot = transform.eulerAngles;

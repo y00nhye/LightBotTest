@@ -7,7 +7,7 @@ public class DataManager : Singleton<DataManager>
     public TextAsset data;
     public AllData datas;
 
-    public Dictionary<int, MapData[]> allRoundData = new Dictionary<int, MapData[]>();
+    public Dictionary<int, MapData[]> allRoundData = new Dictionary<int, MapData[]>(); //¸Ê º°·Î data »ðÀÔ
 
     private void Awake()
     {

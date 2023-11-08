@@ -13,11 +13,13 @@ public class Go_Command : Command
         tar = transform.position + transform.forward;
         playerAni.SetBool("GO", true);
 
-        int tar_i = (int)tar.x * 100 + (int)tar.z * 10 + (int)tar.y; //xzy 하나의 값
+        int tar_i = (int)Mathf.Round(tar.x) * 100
+            + (int)Mathf.Round(tar.z) * 10
+            + (int)Mathf.Round(tar.y); //좌표를 하나의 int 값으로 변경
 
-        foreach(int pos in MapProducer.Instance.baseData.Keys)
+        foreach (int pos in MapLoader.Instance.baseData.Keys) //dictionary key 값과 좌표값 비교
         {
-            if(tar_i == pos)
+            if(tar_i == pos) //좌표가 base dictionary에 있다면
             {
                 canGo = true;
                 break;

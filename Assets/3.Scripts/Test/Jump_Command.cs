@@ -19,12 +19,16 @@ public class Jump_Command : Command
         tarU = transform.position + transform.forward + transform.up;
         tarD = transform.position + transform.forward - transform.up;
 
-        int tarU_i = (int)tarU.x * 100 + (int)tarU.z * 10 + (int)tarU.y; //xzy 하나의 값
-        int tarD_i = (int)tarD.x * 100 + (int)tarD.z * 10 + (int)tarD.y; //xzy 하나의 값
+        int tarU_i = (int)Mathf.Round(tarU.x) * 100
+            + (int)Mathf.Round(tarU.z) * 10
+            + (int)Mathf.Round(tarU.y); //위 점프 좌표 변환값
 
-        foreach (int pos in MapProducer.Instance.baseData.Keys)
+        int tarD_i = (int)Mathf.Round(tarD.x) * 100
+            + (int)Mathf.Round(tarD.z) * 10
+            + (int)Mathf.Round(tarD.y); //아래 점프 좌표 변환값
+
+        foreach (int pos in MapLoader.Instance.baseData.Keys)
         {
-            canJump = true;
             if (tarU_i == pos)
             {
                 canJump = true;

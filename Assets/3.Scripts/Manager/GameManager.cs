@@ -71,7 +71,7 @@ public class GameManager : Singleton<GameManager>
         UIManager.Instance.UIReset();
         PlayerInput.Instance.InputReset();
 
-        FindObjectOfType<MapProducer>().MapLoad();
+        FindObjectOfType<MapLoader>().MapLoad();
         FindObjectOfType<PlayerMoveTest>().LoadPlayer();
     }
 

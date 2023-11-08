@@ -17,14 +17,19 @@ public class Go_Command : Command
             + (int)Mathf.Round(tar.z) * 10
             + (int)Mathf.Round(tar.y); //좌표를 하나의 int 값으로 변경
 
-        foreach (int pos in MapLoader.Instance.baseData.Keys) //dictionary key 값과 좌표값 비교
+        if (MapLoader.Instance.baseData.ContainsKey(tar_i)) //containskey 로 간편하게 찾기!
+        {
+            canGo = true;
+        }
+        
+        /*foreach (int pos in MapLoader.Instance.baseData.Keys) //dictionary key 값과 좌표값 비교
         {
             if(tar_i == pos) //좌표가 base dictionary에 있다면
             {
                 canGo = true;
                 break;
             }
-        }
+        }*/
 
         StartCoroutine(Action_co());
     }
